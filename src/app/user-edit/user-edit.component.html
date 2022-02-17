@@ -1,0 +1,19 @@
+<div class="text-center">
+    <main class="form-signin">
+        <form [formGroup]="userAdd">
+          <h1 class="h3 mb-3 fw-normal">Kullanıcı Düzenle</h1>
+      
+          <div class="form-floating">
+            <input formControlName="first_name" type="text" class="form-control" id="floatingInput" >
+            <label for="first_name">{{user.first_name}} {{user.last_name}}</label>
+          </div>
+          <div class="form-floating">
+            <input formControlName="last_name" type="text" class="form-control" id="floatingPassword" >
+            <label for="last_name">{{user.email}} </label>
+          </div>
+      
+          
+          <button (click)="update()" class="w-100 btn btn-lg btn-primary" type="submit">Kaydet</button>
+        </form>
+      </main>
+    </div>
